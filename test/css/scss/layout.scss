@@ -1,0 +1,30 @@
+@import "colors";
+
+@mixin main-layout {
+  background: $bg_color;
+
+  #main, #console {
+    width: 700px;
+    margin: 3em auto 0 auto;
+
+    background: $main_bg_color;
+    border-radius: 1em;
+    padding: 1em;
+  }
+
+  #console {
+    background: #222;
+
+    #messages {
+      background: #fff;
+      overflow-y: auto;
+      width: 100%;
+      min-height: 20px;
+      max-height: 400px;
+
+      pre {
+        margin: 1em;
+      }
+    }
+  }
+}
