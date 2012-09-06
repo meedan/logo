@@ -44,7 +44,7 @@
   </div>
 
   <div id="console">
-    <div id="messages"><pre># Console messages
+    <div id="messages"><pre># Debug messages
 
 </pre></div>
   </div>
@@ -68,12 +68,7 @@
   <script type="text/javascript">
   (function ($) {
     $(function () {
-      var project = new Project({
-        debug: function (msg) {
-          var $pre = $('#messages pre');
-          $pre.html($pre.html() + msg + "\n");
-        },
-      });
+      var project = new Project();
 
       project.doStuff();
       console.log(project);

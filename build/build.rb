@@ -19,11 +19,11 @@ require 'fileutils'
     # Default prefix, wraps the project in a closure and drops the main object
     # into the global variable "Project"
     "prefix"     => '/*jslint bitwise: true, continue: true, nomen: true, plusplus: true, todo: true, white: true, browser: true, devel: true, indent: 2 */' + "\n" +
-                    'var Project = (function (window, $) {' + "\n" +
+                    'var Project = (function () {' + "\n" +
                     '  "use strict";' + "\n\n",
     # Necessary bits to complete the default prefix
     "suffix"     => '  return Project;' + "\n" +
-                    '}(window, jQuery));'
+                    '}());' # Pass globals into the closure here, eg: jQuery -> $
   }
 }
 
