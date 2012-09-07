@@ -4,21 +4,22 @@
   background: $bg_color;
 
   #main, #console {
-    width: 700px;
+    width: 300px;
     margin: 3em auto 0 auto;
 
     background: $main_bg_color;
-    border-radius: 1em;
+    border-radius: 3px;
     padding: 1em;
   }
 
-  #Meedan {
-    width: 129px;
-    height: 215px;
-    background: url(../img/meedan-no-logo.png);
-  }
+  // #Meedan {
+  //   width: 129px;
+  //   height: 215px;
+  //   background: url(../img/meedan-no-logo.png);
+  // }
 
   #console {
+    display: none;
     background: #222;
 
     #messages {

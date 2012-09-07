@@ -428,11 +428,14 @@ var Meedan = (function () {
         a = Math.random() * util.twoPI;
 
     return {
-      x: util.fround(this.bounds.cx + Math.cos(a) * r),
-      y: util.fround(this.bounds.cy + Math.sin(a) * r)
+      x: util.fround(this.bounds.cx + Math.cos(a) * r - this.opts.dotRadius),
+      y: util.fround(this.bounds.cy + Math.sin(a) * r - this.opts.dotRadius)
     };
   };
 
+  Logo.prototype.packDisc = function () {
+    // TODO: Disc pack algo.
+  }
 
   Logo.prototype.doStuff = function () {
     // TODO: Stuff...

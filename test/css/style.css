@@ -12,24 +12,24 @@
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */
-/* line 18, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 18, scss/boilerplate.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
 
-/* line 19, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 19, scss/boilerplate.scss */
 audio, canvas, video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
 }
 
-/* line 20, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 20, scss/boilerplate.scss */
 audio:not([controls]) {
   display: none;
 }
 
-/* line 21, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 21, scss/boilerplate.scss */
 [hidden] {
   display: none;
 }
@@ -41,20 +41,20 @@ audio:not([controls]) {
  * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
  * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
  */
-/* line 33, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 33, scss/boilerplate.scss */
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* line 35, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 35, scss/boilerplate.scss */
 html, button, input, select, textarea {
   font-family: sans-serif;
   color: #222;
 }
 
-/* line 37, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 37, scss/boilerplate.scss */
 body {
   margin: 0;
   font-size: 1em;
@@ -66,14 +66,14 @@ body {
  * These selection declarations have to be separate
  * Also: hot pink! (or customize the background color to match your design)
  */
-/* line 45, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 45, scss/boilerplate.scss */
 ::-moz-selection {
   background: #fe57a1;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 46, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 46, scss/boilerplate.scss */
 ::selection {
   background: #fe57a1;
   color: #fff;
@@ -83,28 +83,28 @@ body {
 /* =============================================================================
    Links
    ========================================================================== */
-/* line 53, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 53, scss/boilerplate.scss */
 a {
   color: #00e;
 }
 
-/* line 54, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 54, scss/boilerplate.scss */
 a:visited {
   color: #551a8b;
 }
 
-/* line 55, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 55, scss/boilerplate.scss */
 a:hover {
   color: #06e;
 }
 
-/* line 56, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 56, scss/boilerplate.scss */
 a:focus {
   outline: thin dotted;
 }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
-/* line 59, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 59, scss/boilerplate.scss */
 a:hover, a:active {
   outline: 0;
 }
@@ -112,27 +112,27 @@ a:hover, a:active {
 /* =============================================================================
    Typography
    ========================================================================== */
-/* line 66, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 66, scss/boilerplate.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 68, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 68, scss/boilerplate.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 70, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 70, scss/boilerplate.scss */
 blockquote {
   margin: 1em 40px;
 }
 
-/* line 72, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 72, scss/boilerplate.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 74, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 74, scss/boilerplate.scss */
 hr {
   display: block;
   height: 1px;
@@ -142,14 +142,14 @@ hr {
   padding: 0;
 }
 
-/* line 76, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 76, scss/boilerplate.scss */
 ins {
   background: #ff9;
   color: #000;
   text-decoration: none;
 }
 
-/* line 78, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 78, scss/boilerplate.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -158,7 +158,7 @@ mark {
 }
 
 /* Redeclare monospace font family: h5bp.com/j */
-/* line 81, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 81, scss/boilerplate.scss */
 pre, code, kbd, samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
@@ -166,31 +166,31 @@ pre, code, kbd, samp {
 }
 
 /* Improve readability of pre-formatted text in all browsers */
-/* line 84, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 84, scss/boilerplate.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 86, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 86, scss/boilerplate.scss */
 q {
   quotes: none;
 }
 
-/* line 87, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 87, scss/boilerplate.scss */
 q:before, q:after {
   content: "";
   content: none;
 }
 
-/* line 89, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 89, scss/boilerplate.scss */
 small {
   font-size: 85%;
 }
 
 /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
-/* line 92, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 92, scss/boilerplate.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -198,12 +198,12 @@ sub, sup {
   vertical-align: baseline;
 }
 
-/* line 93, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 93, scss/boilerplate.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 94, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 94, scss/boilerplate.scss */
 sub {
   bottom: -0.25em;
 }
@@ -211,18 +211,18 @@ sub {
 /* =============================================================================
    Lists
    ========================================================================== */
-/* line 101, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 101, scss/boilerplate.scss */
 ul, ol {
   margin: 1em 0;
   padding: 0 0 0 40px;
 }
 
-/* line 102, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 102, scss/boilerplate.scss */
 dd {
   margin: 0 0 0 40px;
 }
 
-/* line 103, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 103, scss/boilerplate.scss */
 nav ul, nav ol {
   list-style: none;
   list-style-image: none;
@@ -237,7 +237,7 @@ nav ul, nav ol {
  * 1. Improve image quality when scaled in IE7: h5bp.com/d
  * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
  */
-/* line 115, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 115, scss/boilerplate.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -247,7 +247,7 @@ img {
 /*
  * Correct overflow not hidden in IE9
  */
-/* line 121, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 121, scss/boilerplate.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -255,7 +255,7 @@ svg:not(:root) {
 /* =============================================================================
    Figures
    ========================================================================== */
-/* line 128, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 128, scss/boilerplate.scss */
 figure {
   margin: 0;
 }
@@ -263,12 +263,12 @@ figure {
 /* =============================================================================
    Forms
    ========================================================================== */
-/* line 135, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 135, scss/boilerplate.scss */
 form {
   margin: 0;
 }
 
-/* line 136, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 136, scss/boilerplate.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -276,7 +276,7 @@ fieldset {
 }
 
 /* Indicate that 'label' will shift focus to the associated form element */
-/* line 139, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 139, scss/boilerplate.scss */
 label {
   cursor: pointer;
 }
@@ -285,7 +285,7 @@ label {
  * 1. Correct color not inheriting in IE6/7/8/9
  * 2. Correct alignment displayed oddly in IE6/7
  */
-/* line 146, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 146, scss/boilerplate.scss */
 legend {
   border: 0;
   *margin-left: -7px;
@@ -298,7 +298,7 @@ legend {
  * 2. Remove margins in FF3/4 S5 Chrome
  * 3. Define consistent vertical alignment display in all browsers
  */
-/* line 154, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 154, scss/boilerplate.scss */
 button, input, select, textarea {
   font-size: 100%;
   margin: 0;
@@ -309,7 +309,7 @@ button, input, select, textarea {
 /*
  * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
  */
-/* line 160, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 160, scss/boilerplate.scss */
 button, input {
   line-height: normal;
 }
@@ -319,7 +319,7 @@ button, input {
  * 2. Allow styling of clickable form elements in iOS
  * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
  */
-/* line 168, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 168, scss/boilerplate.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
@@ -329,7 +329,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements
  */
-/* line 174, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 174, scss/boilerplate.scss */
 button[disabled], input[disabled] {
   cursor: default;
 }
@@ -337,7 +337,7 @@ button[disabled], input[disabled] {
 /*
  * Consistent box sizing and appearance
  */
-/* line 180, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 180, scss/boilerplate.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
@@ -345,7 +345,7 @@ input[type="checkbox"], input[type="radio"] {
   *height: 13px;
 }
 
-/* line 181, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 181, scss/boilerplate.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -353,7 +353,7 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 182, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 182, scss/boilerplate.scss */
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
@@ -361,7 +361,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 /*
  * Remove inner padding and border in FF3/4: h5bp.com/l
  */
-/* line 188, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 188, scss/boilerplate.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -371,7 +371,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE6/7/8/9
  * 2. Allow only vertical resizing
  */
-/* line 195, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 195, scss/boilerplate.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
@@ -379,7 +379,7 @@ textarea {
 }
 
 /* Colors for form validity */
-/* line 199, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 199, scss/boilerplate.scss */
 input:invalid, textarea:invalid {
   background-color: #f0dddd;
 }
@@ -387,13 +387,13 @@ input:invalid, textarea:invalid {
 /* =============================================================================
    Tables
    ========================================================================== */
-/* line 206, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 206, scss/boilerplate.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 207, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 207, scss/boilerplate.scss */
 td {
   vertical-align: top;
 }
@@ -401,7 +401,7 @@ td {
 /* =============================================================================
    Chrome Frame Prompt
    ========================================================================== */
-/* line 214, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate.scss */
+/* line 214, scss/boilerplate.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -411,27 +411,22 @@ td {
 
 /* line 10, scss/style.scss */
 body {
-  background: #444444;
+  background: #222222;
 }
-/* line 6, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/layout.scss */
+/* line 6, scss/layout.scss */
 body #main, body #console {
-  width: 700px;
+  width: 300px;
   margin: 3em auto 0 auto;
-  background: #dddddd;
-  border-radius: 1em;
+  background: white;
+  border-radius: 3px;
   padding: 1em;
 }
-/* line 15, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/layout.scss */
-body #Meedan {
-  width: 129px;
-  height: 215px;
-  background: url(../img/meedan-no-logo.png);
-}
-/* line 21, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/layout.scss */
+/* line 21, scss/layout.scss */
 body #console {
+  display: none;
   background: #222;
 }
-/* line 24, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/layout.scss */
+/* line 25, scss/layout.scss */
 body #console #messages {
   background: #fff;
   overflow-y: auto;
@@ -439,7 +434,7 @@ body #console #messages {
   min-height: 20px;
   max-height: 400px;
 }
-/* line 31, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/layout.scss */
+/* line 32, scss/layout.scss */
 body #console #messages pre {
   margin: 1em;
 }
@@ -456,7 +451,7 @@ body #console #messages pre {
    Please define your styles before this section.
    ========================================================================== */
 /* For image replacement */
-/* line 18, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+/* line 18, scss/boilerplate-final.scss */
 .ir {
   display: block;
   border: 0;
@@ -469,20 +464,20 @@ body #console #messages pre {
   *line-height: 0;
 }
 
-/* line 19, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+/* line 19, scss/boilerplate-final.scss */
 .ir br {
   display: none;
 }
 
 /* Hide from both screenreaders and browsers: h5bp.com/u */
-/* line 22, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+/* line 22, scss/boilerplate-final.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
-/* line 25, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+/* line 25, scss/boilerplate-final.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -495,7 +490,7 @@ body #console #messages pre {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
-/* line 28, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+/* line 28, scss/boilerplate-final.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -506,24 +501,24 @@ body #console #messages pre {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 31, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+/* line 31, scss/boilerplate-final.scss */
 .invisible {
   visibility: hidden;
 }
 
 /* Contain floats: h5bp.com/q */
-/* line 34, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+/* line 34, scss/boilerplate-final.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 35, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+/* line 35, scss/boilerplate-final.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 36, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+/* line 36, scss/boilerplate-final.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -533,7 +528,7 @@ body #console #messages pre {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 46, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+  /* line 46, scss/boilerplate-final.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -544,45 +539,45 @@ body #console #messages pre {
   }
 
   /* Black prints faster: h5bp.com/s */
-  /* line 47, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+  /* line 47, scss/boilerplate-final.scss */
   a, a:visited {
     text-decoration: underline;
   }
 
-  /* line 48, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+  /* line 48, scss/boilerplate-final.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 49, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+  /* line 49, scss/boilerplate-final.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 50, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+  /* line 50, scss/boilerplate-final.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
   /* Don't show links for images, or javascript/internal links */
-  /* line 51, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+  /* line 51, scss/boilerplate-final.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 52, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+  /* line 52, scss/boilerplate-final.scss */
   thead {
     display: table-header-group;
   }
 
   /* h5bp.com/t */
-  /* line 53, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+  /* line 53, scss/boilerplate-final.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 54, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+  /* line 54, scss/boilerplate-final.scss */
   img {
     max-width: 100% !important;
   }
@@ -591,13 +586,13 @@ body #console #messages pre {
     margin: 0.5cm;
 }
 
-  /* line 56, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+  /* line 56, scss/boilerplate-final.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 57, /Users/james/Code/Meedan/meedan-canvas-logo/test/css/scss/boilerplate-final.scss */
+  /* line 57, scss/boilerplate-final.scss */
   h2, h3 {
     page-break-after: avoid;
   }
