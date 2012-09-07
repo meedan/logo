@@ -12,7 +12,7 @@
        More info: h5bp.com/i/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Project</title>
+  <title>Meedan</title>
   <meta name="description" content="">
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
@@ -37,8 +37,10 @@
 
   <div role="main" id="main">
 
-    <div id="Project">
-      <noscript>You should be seeing the Project here... hmm.</noscript>
+    <div id="Meedan">
+      <canvas width="130" height="130">
+        <noscript>You should be seeing the Meedan here... hmm.</noscript>
+      </canvas>
     </div>
 
   </div>
@@ -62,16 +64,16 @@
   <![endif]-->
 
   <script src="./js/plugins.js"></script>
-  <!-- TODO: Add other libraries here ... -->
-  <script src="./build/project.js"></script>
+
+  <script src="./build/meedan.js"></script>
 
   <script type="text/javascript">
   (function ($) {
     $(function () {
-      var project = new Project();
+      var $canvas = $('#Meedan canvas');
+      var meedan = new Meedan.Logo($canvas[0]);
 
-      project.doStuff();
-      console.log(project);
+      meedan.doStuff();
     });
   }(jQuery));
   </script>

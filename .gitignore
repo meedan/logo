@@ -1,0 +1,6 @@
+# Project files, and other junk
+.DS_Store
+Icon
+Thumbs.db
+.bundle
+.sass-cache

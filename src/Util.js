@@ -2,11 +2,12 @@
 var isLikelyNode = typeof Buffer !== "undefined" && typeof window === "undefined";
 
 /**
- * Project helpers
+ * Meedan Logo helpers
  */
 function Util() {
   this._180ByPi = 180 / Math.PI;
   this._PiBy180 = Math.PI / 180;
+  this.twoPI    = Math.PI * 2;
 };
 
 // Globally available Util instance
@@ -124,3 +125,4 @@ Util.prototype.dataAttributes = function (node) {
 
   return d;
 };
+

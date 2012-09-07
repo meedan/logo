@@ -3,26 +3,27 @@ require 'fileutils'
 
 @root = File.expand_path(File.join(File.dirname(__FILE__), ".."))
 
-@default_project = "Project"
+@default_project = "Meedan"
 @projects = {
-  "Project" => {
+  "Meedan" => {
     "minify"     => true,
     # The final compiled file
-    "build_file" => "project.js",
+    "build_file" => "meedan.js",
     # List all sources here. Ordering may matter for dependencies
     "srcs"       => [
+                      "context_blender.js",
                       "Util.js",
                       "Main.js",
                     ],
     # Indentation to apply to all code added to the project (so it fits neatly into the closure)
     "indent_all" => '  ',
     # Default prefix, wraps the project in a closure and drops the main object
-    # into the global variable "Project"
+    # into the global variable "Meedan"
     "prefix"     => '/*jslint bitwise: true, continue: true, nomen: true, plusplus: true, todo: true, white: true, browser: true, devel: true, indent: 2 */' + "\n" +
-                    'var Project = (function () {' + "\n" +
+                    'var Meedan = (function () {' + "\n" +
                     '  "use strict";' + "\n\n",
     # Necessary bits to complete the default prefix
-    "suffix"     => '  return Project;' + "\n" +
+    "suffix"     => '  return { Logo: Logo };' + "\n" +
                     '}());' # Pass globals into the closure here, eg: jQuery -> $
   }
 }
