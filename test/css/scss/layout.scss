@@ -3,6 +3,10 @@
 @mixin main-layout {
   background: $bg_color;
 
+  #title {
+    text-align: center;
+  }
+
   #main, #console {
     width: 300px;
     margin: 3em auto 0 auto;
