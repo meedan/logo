@@ -259,14 +259,6 @@ var Meedan = (function () {
   };
 
   /**
-   * Formats numbers with comma as thousands separator
-   * @see http://stackoverflow.com/a/2901298/806988
-   */
-  Util.prototype.formatCommas = function (n) {
-    return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  };
-
-  /**
    * Helper for measuring text.
    *
    * @param "string" string
