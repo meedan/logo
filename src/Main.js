@@ -11,14 +11,14 @@ function Logo(canvas, opts) {
       '#A5BF27'  // Green
     ],
     dotScale: 18.5714286,
-    numDots: 80
+    numDots: 100
   };
   this.opts = $.extend(this.defaults, opts);
 
   this.initCanvas(canvas);
   this.initBounds();
   this.initRasters();
-  this.initDots(true, this.packRandom);
+  this.initDots(true, this.plotFuzzyRings);
 }
 
 Logo.prototype.initCanvas = function (canvas) {
@@ -84,12 +84,17 @@ Logo.prototype.renderDot = function (dot, ctx) {
   ctx.fill();
 };
 
-Logo.prototype.initDots = function (render, packingFn) {
+Logo.prototype.initDots = function (render, plottingFn) {
   var i, pos, r, a, x, y, c;
 
   this.dots = [];
   for (i = this.opts.numDots; i >= 0; i--) {
-    pos = packingFn.call(this);
+    pos = plottingFn.call(this);
+
+    if (pos === false) {
+      continue;
+    }
+
     c   = Math.floor(Math.random() * this.opts.colors.length);
 
     this.dots.push([pos.x, pos.y, c]);
@@ -100,21 +105,53 @@ Logo.prototype.initDots = function (render, packingFn) {
   }
 };
 
-Logo.prototype.packRandom = function () {
-  var r = Math.floor(Math.random() * this.bounds.r),
-      a = Math.random() * util.twoPI;
-
+Logo.prototype.pointWithAngleRadius = function (a, r) {
   return {
     x: util.fround(this.bounds.cx + Math.cos(a) * r - this.opts.dotRadius),
     y: util.fround(this.bounds.cy + Math.sin(a) * r - this.opts.dotRadius)
   };
 };
 
-Logo.prototype.packDisc = function () {
-  // TODO: Disc pack algo.
+Logo.prototype.plotRandom = function () {
+  var r = Math.floor(Math.random() * this.bounds.r),
+      a = Math.random() * util.twoPI;
+
+  return this.pointWithAngleRadius(a, r);
+};
+
+Logo.prototype.plotRings = function (factor) {
+  var state = util.static(this.plotRings, 'state', { r: 0, pos: 0, total: 0 });
+  var first = (state.r == 0 && state.pos == 0);
+
+  factor = factor || 0;
+
+  if (!first && state.pos >= state.total) {
+    state.r    += 2 * this.opts.dotRadius * (1 - factor);
+    state.total = Math.floor((util.twoPI * state.r) / (2 * this.opts.dotRadius) * (1 + factor));
+    state.pos   = Math.random() - 0.5;
+  }
+
+  if (state.r > this.bounds.r) {
+    return false; // Don't draw this point, we're out of bounds
+  }
+
+  state.a    = state.total > 0 ? state.pos / state.total * util.twoPI : 0;
+  state.pos += 1;
+
+  return this.pointWithAngleRadius(state.a, state.r);
 }
 
-Logo.prototype.doStuff = function () {
-  // TODO: Stuff...
+Logo.prototype.plotFuzzyRings = function () {
+  var pos = this.plotRings(0.1),
+      fuzz = this.opts.dotRadius / 2;
+
+  pos.x += Math.floor(Math.random() * fuzz - fuzz);
+  pos.y += Math.floor(Math.random() * fuzz - fuzz);
+
+  return pos;
+}
+
+Logo.prototype.plotTightRings = function () {
+  return this.plotRings(0.3);
 };
 

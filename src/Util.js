@@ -36,6 +36,16 @@ Util.prototype.extend = function (obj1, obj2) {
   return obj1;
 }
 
+/**
+ * Attaches an attribute to an object statically, optionally provide defaults.
+ */
+Util.prototype.static = function (o, a, d) {
+  if (typeof o[a] === 'undefined') {
+    o[a] = d || null;
+  }
+  return o[a];
+}
+
 Util.prototype.radiansToDegrees = function (r) {
   return r * this._180ByPi;
 };
