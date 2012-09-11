@@ -69,10 +69,12 @@
   <script src="./build/meedan.js"></script>
 
   <script type="text/javascript">
+  var meedan; // Global meedan var, useful for mucking about in the console
+
   (function ($) {
     $(function () {
       var $canvas = $('#Meedan canvas');
-      var meedan = new Meedan.Logo($canvas[0]);
+      meedan = new Meedan.Logo($canvas[0]);
     });
   }(jQuery));
   </script>
