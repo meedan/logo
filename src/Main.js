@@ -32,6 +32,10 @@ Logo.prototype.clearRender = function () {
   this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 };
 
+Logo.prototype.clearState = function () {
+  util.clearStatic(this.plotRings);
+};
+
 Logo.prototype.initBounds = function () {
   var smallDim = Math.min(this.canvas.width, this.canvas.height);
 

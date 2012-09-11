@@ -245,9 +245,25 @@ var Meedan = (function () {
   Util.prototype.static = function (o, a, d) {
     if (typeof o[a] === 'undefined') {
       o[a] = d || null;
+      o._static_attrs = (o._static_attrs || []);
+      o._static_attrs.push(a);
     }
     return o[a];
-  }
+  };
+
+  Util.prototype.clearStatic = function (o) {
+    var i, a, sa = o._static_attrs || null;
+
+    if (sa == null) {
+      return;
+    }
+
+    for (i = sa.length - 1; i >= 0; i--) {
+      delete o[sa[i]];
+    }
+
+    delete o._static_attrs;
+  };
 
   Util.prototype.radiansToDegrees = function (r) {
     return r * this._180ByPi;
@@ -363,6 +379,10 @@ var Meedan = (function () {
 
   Logo.prototype.clearRender = function () {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+  };
+
+  Logo.prototype.clearState = function () {
+    util.clearStatic(this.plotRings);
   };
 
   Logo.prototype.initBounds = function () {
